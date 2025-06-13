@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login Peluquería Cheta</title>
+  <link rel="stylesheet" href="../src/styles/login.css">
+  <style>
+    .peluquero-svg-container {
+      width: 180px;
+      margin: 0 auto 1.2rem auto;
+      display: block;
+    }
+    .tijera {
+      transform-origin: 120px 70px;
+      animation: tijera-corte 1.2s infinite cubic-bezier(.68,-0.55,.27,1.55);
+    }
+    @keyframes tijera-corte {
+      0%, 100% { transform: rotate(-10deg);}
+      50% { transform: rotate(25deg);}
+    }
+    .cabello {
+      stroke-dasharray: 60;
+      stroke-dashoffset: 0;
+      animation: cabello-corte 1.2s infinite;
+    }
+    @keyframes cabello-corte {
+      0%, 100% { stroke-dashoffset: 0;}
+      50% { stroke-dashoffset: 30;}
+    }
+  </style>
+</head>
+<body>
+  <div class="login-bg">
+    <div class="bubbles"></div>
+    <form class="login-form" id="loginForm" autocomplete="off">
+      <div class="video-login-container" style="width:100%;display:flex;justify-content:center;margin-bottom:1.2rem;">
+        <img src="https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?auto=format&fit=crop&w=400&q=80"
+          alt="Barbero cortando el pelo" style="width: 220px; height: 140px; object-fit: cover; border-radius: 1rem; box-shadow: 0 2px 12px #ff4e8e44;">
+      </div>
+      <h2>¡Bienvenido a la Cheta!</h2>
+      <input type="text" id="usuario" placeholder="Usuario" required autofocus>
+      <input type="password" id="clave" placeholder="Contraseña" required>
+      <button type="submit">Entrar</button>
+      <div id="error" class="error"></div>
+    </form>
+  </div>
+  <script src="../src/scripts/login.js"></script>
+</body>
+</html>

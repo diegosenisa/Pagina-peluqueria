@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Peluquería Cheta</title>
+  <link rel="stylesheet" href="../src/styles/main.css">
+  <link rel="icon" href="../src/images/logo.png">
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="../src/images/logo.png" alt="Logo Peluquería Cheta" class="logo">
+      <h1>Peluquería Cheta</h1>
+    </div>
+    <nav>
+      <a href="#servicios">Servicios</a>
+      <a href="#sobre">Sobre Nosotros</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+  <main>
+    <section id="filtros">
+      <h2>Filtrar por precio</h2>
+      <label for="precio">Máximo $<span id="precio-valor">5000</span></label>
+      <input type="range" id="precio" min="500" max="5000" value="5000" step="100">
+    </section>
+    <section id="servicios">
+      <h2>Servicios</h2>
+      <div id="lista-servicios"></div>
+    </section>
+    <section id="sobre">
+      <h2>Sobre Nosotros</h2>
+      <p>Somos una peluquería moderna, con los mejores profesionales y productos de calidad. ¡Vení a vivir la experiencia Cheta!</p>
+      <div class="galeria">
+        <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80" alt="Peluquería 1">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Peluquería 2">
+        <img src="https://images.unsplash.com/photo-1519415943484-cfbdfb486052?auto=format&fit=crop&w=400&q=80" alt="Peluquería 3">
+      </div>
+    </section>
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <form>
+        <input type="text" placeholder="Tu nombre" required>
+        <input type="email" placeholder="Tu email" required>
+        <textarea placeholder="Tu mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+      <div class="whatsapp-info">
+        <p>O escribinos directo por WhatsApp:</p>
+        <a href="https://wa.me/59892331119" target="_blank" class="whatsapp-link">
+          <img src="../src/images/whatsapp.png" alt="WhatsApp" class="whatsapp-icon"> +598 92 331 119
+        </a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Peluquería Cheta. Todos los derechos reservados.</p>
+  </footer>
+  <a href="https://wa.me/59892331119" class="whatsapp-float" target="_blank" title="Escribinos por WhatsApp">
+    <img src="../src/images/whatsapp.png" alt="WhatsApp">
+  </a>
+  <script src="../src/scripts/main.js"></script>
+</body>
+</html>

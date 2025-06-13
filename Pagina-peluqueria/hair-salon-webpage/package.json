@@ -1,0 +1,24 @@
+{
+  "name": "hair-salon-webpage",
+  "version": "1.0.0",
+  "description": "A webpage for a hair salon showcasing services, about information, and contact details.",
+  "main": "src/scripts/main.js",
+  "scripts": {
+    "start": "live-server public",
+    "build": "echo 'Build step not defined'",
+    "test": "echo 'No tests defined'"
+  },
+  "keywords": [
+    "hair",
+    "salon",
+    "webpage",
+    "services",
+    "contact"
+  ],
+  "author": "Your Name",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
